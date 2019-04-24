@@ -63,3 +63,26 @@ npx create-react-app react-tutorial
 cd react-tutorial
 npm start
 ```
+
+> commit-id fbf4a8
+
+`git reset --hard fbf4a8`
+
+### React Developer Tools
+
+There is an extension called React Developer Tools that will make your life much easier when working with React. Download [React DevTools for Chrome](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi), or whatever browser you prefer to work on.
+
+## JSX: JavaScript + XML
+
+JSX is actually closer to JavaScript, not HTML, so there are a few key differences to note when writing it.
+
+- `className` is used instead of `class` for adding CSS classes, as `class` is a reserved keyword in JavaScript.
+- Properties and methods in JSX are camelCase - `onclick` will become `onClick`.
+- Self-closing tags _must_ end in a slash - e.g. `<img />`
+
+JavaScript expressions can also be embedded inside JSX using curly braces, including variables, functions, and properties.
+
+```jsx
+const name = 'Tania'
+const heading = <h1>Hello, {name}</h1>
+```
