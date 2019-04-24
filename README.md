@@ -86,3 +86,31 @@ JavaScript expressions can also be embedded inside JSX using curly braces, inclu
 const name = 'Tania'
 const heading = <h1>Hello, {name}</h1>
 ```
+
+## Components
+
+### Class Components
+
+```jsx
+import React, { Component } from 'react'
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <h1>Hello, React!</h1>
+      </div>
+    )
+  }
+}
+
+export default App
+```
+
+### Simple Components
+
+```jsx
+const SimpleComponent = () => {
+  return <div>Example</div>
+}
+```
