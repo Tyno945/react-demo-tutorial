@@ -51,3 +51,15 @@ One of the most important aspects of React is the fact that you can create **com
   </body>
 </html>
 ```
+
+> commit-id 2f9d7dc
+
+`git reset --hard 2f9d7dc`
+
+### Create React App
+
+```bash
+npx create-react-app react-tutorial
+cd react-tutorial
+npm start
+```
