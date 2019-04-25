@@ -114,3 +114,11 @@ const SimpleComponent = () => {
   return <div>Example</div>
 }
 ```
+
+> commit-id d76bd3d
+
+`git reset --hard d76bd3d`
+
+## Props
+
+Props are an effective way to pass existing data to a React component, however the component cannot change the props - they're read-only. 
