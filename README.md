@@ -138,3 +138,15 @@ You can think of state as any data that should be saved and modified without nec
 ## Submitting Form Data
 
 Our goal for this form will be to update the state of `Form` every time a field is changed in the form, and when we submit, all that data will pass to the `App` state, which will then update the `Table`.
+
+> commit-id cd18d4c
+
+`git reset --hard cd18d4c`
+
+## Pulling in API Data
+
+One very common usage of React is pulling in data from an API. If you're not familiar with what an API is or how to connect to one, I would recommend reading [How to Connect to an API with JavaScript](/how-to-connect-to-an-api-with-javascript/), which will walk you through what APIs are and how to use them with vanilla JavaScript.
+
+**Lifecycle** is the order in which methods are called in React. **Mounting** refers to an item being inserted into the DOM.
+
+When we pull in API data, we want to use `componentDidMount`, because we want to make sure the component has rendered to the DOM before we bring in the data.
