@@ -122,3 +122,11 @@ const SimpleComponent = () => {
 ## Props
 
 Props are an effective way to pass existing data to a React component, however the component cannot change the props - they're read-only. 
+
+> commit-id 5809b02
+
+`git reset --hard 5809b02`
+
+## State
+
+You can think of state as any data that should be saved and modified without necessarily being added to a database - for example, adding and removing items from a shopping cart before confirming your purchase.
