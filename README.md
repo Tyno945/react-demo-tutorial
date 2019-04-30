@@ -130,3 +130,11 @@ Props are an effective way to pass existing data to a React component, however t
 ## State
 
 You can think of state as any data that should be saved and modified without necessarily being added to a database - for example, adding and removing items from a shopping cart before confirming your purchase.
+
+> commit-id c4effea
+
+`git reset --hard c4effea`
+
+## Submitting Form Data
+
+Our goal for this form will be to update the state of `Form` every time a field is changed in the form, and when we submit, all that data will pass to the `App` state, which will then update the `Table`.

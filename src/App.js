@@ -1,33 +1,17 @@
 import React, { Component } from 'react';
 import './App.css';
-import Table from './Table'
+import Table from './Table';
+import Form from './Form';
 
 class App extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      characters: [
-        {
-          name: 'Charlie',
-          job: 'Janitor',
-        },
-        {
-          name: 'Mac',
-          job: 'Bouncer',
-        },
-        {
-          name: 'Dee',
-          job: 'Aspring actress',
-        },
-        {
-          name: 'Dennis',
-          job: 'Bartender',
-        },
-      ]
+      characters: []
     }
-
-    this.removeCharacter = this.removeCharacter.bind(this);
+    // 使用箭头函数的时候不需要 .bind(this) 操作
+    // this.removeCharacter = this.removeCharacter.bind(this);
   }
 
   removeCharacter = index => {
@@ -39,6 +23,10 @@ class App extends Component {
       })
     })
   }
+
+  handleSubmit = character => {
+    this.setState({ characters: [...this.state.characters, character] })
+  }
   
 
   render() {
@@ -47,6 +35,7 @@ class App extends Component {
     <div className="App">
       <h1>Hello, React!</h1>
       <Table characterData={characters} removeCharacter={this.removeCharacter} />
+      <Form handleSubmit={this.handleSubmit} />
     </div>
     )
   }
