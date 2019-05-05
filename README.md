@@ -150,3 +150,15 @@ One very common usage of React is pulling in data from an API. If you're not fam
 **Lifecycle** is the order in which methods are called in React. **Mounting** refers to an item being inserted into the DOM.
 
 When we pull in API data, we want to use `componentDidMount`, because we want to make sure the component has rendered to the DOM before we bring in the data.
+
+> commit-id 0bd1e47
+
+`git reset --hard 0bd1e47`
+
+## Building and Deploying a React App
+
+Now, if you just want to compile all the React code and place it in the root of a directory somewhere, all you need to do is run the following line:
+
+```bash
+npm run build
+```
